@@ -1,18 +1,14 @@
 $( document ).ready(function() {
-    console.log( "ready!" );
     $(".button").on("click", function() {
-        console.log("hi");
         var value = encodeURIComponent($("input").val()); // encodeURIComponent lets input with spaces, e.g. "new york", work.
         function makeSrc(center) {
             return "https://maps.googleapis.com/maps/api/staticmap?center=" + center + "&zoom=10&size=600x300";
         }
         var center = $("input").val();
-        console.log(center);
         var link=makeSrc(center);
-        console.log(link);
-    
-        var img="<img src="+link+">";
-    
+
+        var img="<img src="+'"'+link+"\"/>";
+
         $(".map").append(img);
         
     });
