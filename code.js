@@ -6,3 +6,4 @@ var link=makeSrc(center);
 var img="<img src="+link+>";
 (".map").append(img);});
 function makeSrc(center){return "i am a beautiful " + center + " teapot!";};
+console.log("hi");
