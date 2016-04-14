@@ -6,7 +6,10 @@ $( document ).ready(function() {
         function makeSrc(center) {
             return "https://maps.googleapis.com/maps/api/staticmap?center=" + center + "&zoom=10&size=600x300";
         }
+        var center = $("input").val();
+        console.log(center);
         var link=makeSrc(center);
+        console.log(link);
     
         var img="<img src="+link+">";
     
