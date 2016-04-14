@@ -9,7 +9,7 @@ $( document ).ready(function() {
 
         var img="<img src="+'"'+link+"\"/>";
 
-        $(".map").append(img);
+        $(".map").html(img);
         
     });
     
